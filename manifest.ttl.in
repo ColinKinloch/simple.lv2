@@ -1,0 +1,30 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://colin.kinlo.ch/lv2/simple/>
+  a doap:Project ;
+  lv2:symbol "cksimp" ;
+  doap:name "Simple Plugins" ;
+  doap:shortdesc "Simple LV2 plugins with few dependencies" ;
+  doap:homepage <https://colin.knilo.ch/lv2/simple/> ;
+  doap:maintainer [
+    foaf:name "Colin Kinloch" ;
+    foaf:mbox <mailto:colin@kinlo.ch>
+  ] .
+
+<http://colin.kinlo.ch/lv2/simple/osc>
+  a lv2:Plugin ;
+  lv2:binary <@OBJECT@> ;
+  rdfs:seeAlso <osc.ttl> .
+
+<http://colin.kinlo.ch/lv2/simple/sine>
+  a lv2:Plugin ;
+  lv2:binary <@OBJECT@> ;
+  rdfs:seeAlso <sine.ttl> .
+
+<http://colin.kinlo.ch/lv2/simple/mult>
+  a lv2:Plugin ;
+  lv2:binary <@OBJECT@> ;
+  rdfs:seeAlso <mult.ttl> .
